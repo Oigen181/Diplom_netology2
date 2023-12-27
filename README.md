@@ -79,6 +79,13 @@ http://51.250.44.165:5601/app/discover
 ![Скриншот 27-12-2023 125207](https://github.com/Oigen181/Diplom_netology2/assets/126493876/d1cc6c83-d262-48ac-9f81-62ff85e93a84)
 
 
+Elasticsearch на виртуальной машине
+
+
+![Скриншот 27-12-2023 203402](https://github.com/Oigen181/Diplom_netology2/assets/126493876/10c27c08-74fd-4108-b92c-7f191d476a97)
+
+
+
 ---
 
 ### 4.Сеть
