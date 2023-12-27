@@ -17,26 +17,43 @@
 
 ![Скриншот 27-12-2023 123747](https://github.com/Oigen181/Diplom_netology2/assets/126493876/39770e48-ae01-4057-a7e9-a2269ad2819d)
 
+
+
 Целевые группы:
+
+
 
 ![Скриншот 27-12-2023 123915](https://github.com/Oigen181/Diplom_netology2/assets/126493876/2ca27818-e4ca-44b2-8701-3a26c021893c)
 
 
+
 Backend group
 
+
+
 ![Скриншот 27-12-2023 124014](https://github.com/Oigen181/Diplom_netology2/assets/126493876/6f3461af-26c6-4b92-9d92-ddfea9900050)
+
+
 
 HTTP Router
 
 
+
 ![Скриншот 27-12-2023 124150](https://github.com/Oigen181/Diplom_netology2/assets/126493876/3f6dc8b7-e348-4a83-872a-1d3258bce9ce)
 
+
+
 Application load balancer
+
+
 
 ![Скриншот 27-12-2023 124303](https://github.com/Oigen181/Diplom_netology2/assets/126493876/f8475ec1-6b71-42f4-a030-59bdcd710e8b)
 
 
-Тест сайта curl -v 158.160.139.41:80
+
+Тест сайта через баоансировщик 158.160.139.41:80
+
+
 
 ![Скриншот 27-12-2023 124733](https://github.com/Oigen181/Diplom_netology2/assets/126493876/12c17e3b-b11f-4722-92a3-4adb8bc58bb3)
 
