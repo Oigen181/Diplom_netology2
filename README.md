@@ -53,7 +53,10 @@ Application load balancer
 
 Тест сайта через баоансировщик 158.160.139.41:80
 
-http://158.160.139.41
+
+        http://158.160.139.41
+
+
 
 ![Скриншот 27-12-2023 124733](https://github.com/Oigen181/Diplom_netology2/assets/126493876/12c17e3b-b11f-4722-92a3-4adb8bc58bb3)
 
