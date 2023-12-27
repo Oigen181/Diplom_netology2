@@ -73,3 +73,22 @@ http://51.250.44.165:5601/app/discover
 
 ![Скриншот 27-12-2023 125207](https://github.com/Oigen181/Diplom_netology2/assets/126493876/d1cc6c83-d262-48ac-9f81-62ff85e93a84)
 
+
+---
+
+### 4.Сеть
+
+---
+
+Группы безопасности
+
+
+![Скриншот 27-12-2023 125534](https://github.com/Oigen181/Diplom_netology2/assets/126493876/3b3b27cb-c23e-4e84-b136-9df174242d11)
+
+Резервное копирование
+
+![Скриншот 27-12-2023 125814](https://github.com/Oigen181/Diplom_netology2/assets/126493876/0e8072c2-2f08-48c3-8d6f-aa22de7aaa1f)
+
+![Скриншот 27-12-2023 130521](https://github.com/Oigen181/Diplom_netology2/assets/126493876/f4cf92f5-d9d8-499e-8209-9b3682b9304c)
+
+
