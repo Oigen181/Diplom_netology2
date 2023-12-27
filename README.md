@@ -73,6 +73,7 @@ http://51.250.44.165:5601/app/discover
 
 ![Скриншот 27-12-2023 125207](https://github.com/Oigen181/Diplom_netology2/assets/126493876/d1cc6c83-d262-48ac-9f81-62ff85e93a84)
 
+![Скриншот 27-12-2023 142422](https://github.com/Oigen181/Diplom_netology2/assets/126493876/b0f95a93-420d-4035-b113-6ff1c31991b8)
 
 ---
 
