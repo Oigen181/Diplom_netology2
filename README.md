@@ -54,6 +54,11 @@ http://51.250.37.61:8080/zabbix.php?action=host.list
 
 ![Скриншот 27-12-2023 124559](https://github.com/Oigen181/Diplom_netology2/assets/126493876/9a9219b5-c96d-432c-9bc0-d6aada4d0bd3)
 
+
+![Скриншот 27-12-2023 142422](https://github.com/Oigen181/Diplom_netology2/assets/126493876/d769f6d1-50fb-46eb-8806-2a608003ede2)
+
+
+
 Данные для авторизации:
 
 Логин: Admin
@@ -73,7 +78,6 @@ http://51.250.44.165:5601/app/discover
 
 ![Скриншот 27-12-2023 125207](https://github.com/Oigen181/Diplom_netology2/assets/126493876/d1cc6c83-d262-48ac-9f81-62ff85e93a84)
 
-![Скриншот 27-12-2023 142422](https://github.com/Oigen181/Diplom_netology2/assets/126493876/b0f95a93-420d-4035-b113-6ff1c31991b8)
 
 ---
 
