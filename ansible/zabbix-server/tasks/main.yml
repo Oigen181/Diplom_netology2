@@ -1,0 +1,86 @@
+    - name: download zabbix
+      become: yes
+      apt:
+        deb: https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb
+        state: present
+
+    - name: install zabbix server, web interface
+      apt:
+        update_cache: yes
+        name:
+          - zabbix-server-mysql
+          - zabbix-frontend-php
+          - zabbix-apache-conf
+          - zabbix-sql-scripts
+        state: latest
+
+    - name: install mysql server
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: run mysql
+      systemd:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Install python3
+      apt:
+        name: python3-pymysql
+        state: present
+
+    - name: user root mysql
+      mysql_user:
+        user: root
+        password: "{{ rootPass }}"
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: DB zabbix
+      mysql_db:
+        name: "{{ dbName }}"
+        login_user: root
+        login_password: "{{ rootPass }}"
+        collation: utf8_bin
+        state: present
+
+    - name: user zabbix
+      mysql_user:
+        name: "{{ dbUser }}"
+        password: "{{ dbPass }}"
+        host: "{{ dbHost }}"
+        priv: '*.*:ALL'
+        login_user: root
+        login_password: "{{ rootPass }}"
+        state: present
+
+    - name: import
+      mysql_db:
+        name: "{{ dbName }}"
+        state: import
+        target: /usr/share/zabbix-sql-scripts/mysql/server.sql.gz
+        login_user: "{{ dbUser }}"
+        login_host: "{{ dbHost }}"
+        login_password: "{{ dbPass }}"
+
+    - name: cfg zabbix server
+      lineinfile:
+        path: /etc/zabbix/zabbix_server.conf
+        regexp: "{{ item.regexp }}"
+        line: "{{ item.line }}"
+        backup: yes
+      with_items:
+        - { regexp: '# DBPassword=', line: 'DBPassword={{ dbPass }}'}
+        - { regexp: '# DBHost=', line: 'DBHost={{ dbHost }}'}
+
+    - name: zabbix-server
+      systemd:
+        name: zabbix-server
+        state: started
+        enabled: yes
+
+    - name: apache2
+      systemd:
+        name: apache2
+        state: restarted
+        enabled: yes
