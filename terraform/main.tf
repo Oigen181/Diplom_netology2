@@ -9,9 +9,9 @@ terraform {
 
 provider "yandex" {
   zone = "ru-central1-a"
-  token = 
-  cloud_id = 
-  folder_id = 
+  token = 1
+  cloud_id = 1
+  folder_id = 1
 }
 
 resource "yandex_vpc_network" "network-vm" {
