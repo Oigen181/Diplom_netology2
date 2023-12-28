@@ -1,5 +1,5 @@
 ---
-- name: Установка filebeat
+- name: Install filebeat
   hosts: website
   roles:
   - filebeat
