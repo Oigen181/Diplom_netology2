@@ -1,0 +1,25 @@
+[website]
+web1.ru-central1.internal
+web2.ru-central1.internal
+
+[website:vars]
+ansible_ssh_common_args=ProxyCommand="ssh -W %h:%p oigen@51.250.42.207" 
+remote_tmp = etc/ansible/tmp
+
+[zabbix]
+zabbix.ru-central1.internal
+[zabbix:vars]
+ansible_ssh_common_args=ProxyCommand="ssh -W %h:%p oigen@51.250.42.207"
+remote_tmp = etc/ansible/tmp
+
+[kibana]
+kibana.ru-central1.internal
+[kibana:vars]
+ansible_ssh_common_args=ProxyCommand="ssh -W %h:%p oigen@51.250.42.207" 
+remote_tmp = etc/ansible/tmp
+
+[elasticsearch]
+elasticsearch.ru-central1.internal
+[elasticsearch:vars]
+ansible_ssh_common_args=ProxyCommand="ssh -W %h:%p oigen@51.250.42.207" 
+remote_tmp = etc/ansible/tmp
