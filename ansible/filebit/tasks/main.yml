@@ -1,0 +1,22 @@
+- name: download filebeat
+  get_url:
+    url: https://mirror.yandex.ru/mirrors/elastic/8/pool/main/f/filebeat/filebeat-8.9.2-amd64.deb
+    dest: /tmp
+
+- name: Install filebeat
+  apt:
+    deb: /tmp/filebeat-8.9.2-amd64.deb
+
+- name: copy cfg
+  copy:
+    src: ../templates/filebeat.yml
+    dest: /etc/filebeat/
+    mode: 0644
+    owner: root
+    group: root
+
+- name: filebeat
+  systemd:
+    name: filebeat
+    state: started
+    enabled: yes
